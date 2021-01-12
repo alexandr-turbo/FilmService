@@ -1,0 +1,29 @@
+:root {
+  --main-bg: linear-gradient(165deg, #251431 0%, #161130 22%);
+  --main-text-color: #FFFFFF;
+  --toggle-btn-img: url(../src/assets/sun.svg);
+  --accent-color: #EB4E7A;
+  --secondary-bg: #1C262B;
+  --third-bg: #1C262B;
+}
+:root[data-theme='light'] {
+  --main-bg:#CCCCCC;
+  --main-text-color: #000000;
+  --toggle-btn-img: url(../src/assets/moon.svg);
+  --accent-color: #4E9FEB;
+  --secondary-bg: #6B6A6A;
+  --third-bg: #FFFFFF;
+}
+button {
+  color: var(--main-text-color);
+}
+.container {
+  padding: 2rem 0;
+  margin: 0 auto;
+  max-width: 80%;
+}
+@media (max-width: 479px) {
+  .container {
+    max-width: 90%;
+  }
+}
